@@ -10,6 +10,7 @@ read-only by design. no wallet, no signer, no executor.
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://github.com/hakiriagent/hakiri)
 [![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://github.com/hakiriagent/hakiri/tree/main/ingest-rs)
 [![Ethereum](https://img.shields.io/badge/chain-ethereum-627EEA.svg)]()
+[![X / Twitter](https://img.shields.io/badge/x-@HakiriAgent-000000.svg)](https://x.com/HakiriAgent)
 
 </div>
 
