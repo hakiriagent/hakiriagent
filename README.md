@@ -11,7 +11,6 @@ read-only by design. no wallet, no signer, no executor.
 [![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://github.com/hakiriagent/hakiri/tree/main/ingest-rs)
 [![Solana](https://img.shields.io/badge/chain-solana-9945FF.svg)]()
 [![X / Twitter](https://img.shields.io/badge/x-@HakiriAgent-000000.svg)](https://x.com/HakiriAgent)
-[![Telegram](https://img.shields.io/badge/telegram-hakirieth-26A5E4.svg)](https://t.me/hakirieth)
 [![Website](https://img.shields.io/badge/site-hakiri.xyz-white.svg)](https://hakiri.xyz/)
 
 </div>
