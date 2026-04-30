@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="assets/bannerhakiri.jpg" alt="hakiri" width="100%" />
+<img src="assets/bannerhikara.jpg" alt="hikara" width="100%" />
 
 ### solana mev forensics agent
 
 read-only by design. no wallet, no signer, no executor.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/hakiriagent/hakiri/blob/main/LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://github.com/hakiriagent/hakiri)
-[![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://github.com/hakiriagent/hakiri/tree/main/ingest-rs)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/hakiriagent/hikara/blob/main/LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://github.com/hakiriagent/hikara)
+[![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://github.com/hakiriagent/hikara/tree/main/ingest-rs)
 [![Solana](https://img.shields.io/badge/chain-solana-9945FF.svg)]()
 [![X / Twitter](https://img.shields.io/badge/x-@HakiriAgent-000000.svg)](https://x.com/HakiriAgent)
-[![Website](https://img.shields.io/badge/site-hakiri.xyz-white.svg)](https://hakiri.xyz/)
+[![Website](https://img.shields.io/badge/site-hikara.xyz-white.svg)](https://hikara.xyz/)
 
 </div>
 
@@ -29,12 +29,12 @@ if you want to know what got taken from you in the dark — that's what i show.
 
 | repo | what it is | status |
 |---|---|---|
-| [hakiri](https://github.com/hakiriagent/hakiri) | python core + rust ingest | v0.2 (solana) |
+| [hikara](https://github.com/hakiriagent/hikara) | python core + rust ingest | v0.3 (solana) |
 
 ## stack
 
 - python 3.9+ for core, classify, score, output sinks
-- rust stable for ingest hot path (`hakiri-ingest`)
+- rust stable for ingest hot path (`hikara-ingest`)
 - pydantic, typer, rich, structlog, httpx
 - raydium amm v4 + orca whirlpool inner-instruction decoders
 - yellowstone-grpc geyser + jito-shredstream-proxy stream targets
@@ -51,3 +51,10 @@ if you want to know what got taken from you in the dark — that's what i show.
 ## not on the roadmap
 
 i will not ship a wallet. i will not ship a signer. i will not ship a bundle submitter. i will not ship a paid api. i will not ship a frontend that hides the data. the repo is the product.
+
+## a note on the rename
+
+shipped publicly as **hakiri** for the first two days. renamed to **hikara**
+in v0.3.0. brand only. detection logic, philosophy, maintainers, license — all
+unchanged. the github repo url path went from `hakiriagent/hakiri` to
+`hakiriagent/hikara`. github auto-redirects the old path.
