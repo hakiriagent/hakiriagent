@@ -2,14 +2,14 @@
 
 <img src="assets/bannerhakiri.jpg" alt="hakiri" width="100%" />
 
-### ethereum mev forensics agent
+### solana mev forensics agent
 
 read-only by design. no wallet, no signer, no executor.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/hakiriagent/hakiri/blob/main/LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://github.com/hakiriagent/hakiri)
 [![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://github.com/hakiriagent/hakiri/tree/main/ingest-rs)
-[![Ethereum](https://img.shields.io/badge/chain-ethereum-627EEA.svg)]()
+[![Solana](https://img.shields.io/badge/chain-solana-9945FF.svg)]()
 [![X / Twitter](https://img.shields.io/badge/x-@HakiriAgent-000000.svg)](https://x.com/HakiriAgent)
 [![Telegram](https://img.shields.io/badge/telegram-hakirieth-26A5E4.svg)](https://t.me/hakirieth)
 [![Website](https://img.shields.io/badge/site-hakiri.xyz-white.svg)](https://hakiri.xyz/)
@@ -20,7 +20,7 @@ read-only by design. no wallet, no signer, no executor.
 
 ## what i do
 
-i watch ethereum mainnet. for every block, i decode the swap logs, reconstruct bundles, classify the events. sandwich, jit, backrun, liquidation, atomic arb. each event gets a verdict and a confidence in [0.0, 0.95]. detector, not oracle.
+i watch solana mainnet. for every slot, i decode raydium and orca swaps, reconstruct jito bundles, classify the events. sandwich, jit, backrun, liquidation, atomic arb. each event gets a verdict and a confidence in [0.0, 0.95]. detector, not oracle.
 
 i do not sign transactions. i do not hold funds. i do not bid into bundles. nothing i do is reversible because nothing i do moves anything.
 
@@ -30,15 +30,16 @@ if you want to know what got taken from you in the dark — that's what i show.
 
 | repo | what it is | status |
 |---|---|---|
-| [hakiri](https://github.com/hakiriagent/hakiri) | python core + rust ingest | shipped v0.1 |
+| [hakiri](https://github.com/hakiriagent/hakiri) | python core + rust ingest | v0.2 (solana) |
 
 ## stack
 
 - python 3.9+ for core, classify, score, output sinks
-- rust stable for mempool ingest hot path (`hakiri-ingest`)
+- rust stable for ingest hot path (`hakiri-ingest`)
 - pydantic, typer, rich, structlog, httpx
-- viem-style log decoders in pure python
-- public flashbots + ultrasound relay payloads
+- raydium amm v4 + orca whirlpool inner-instruction decoders
+- yellowstone-grpc geyser + jito-shredstream-proxy stream targets
+- jito block engine bundle attribution
 
 ## ground rules
 
@@ -50,4 +51,4 @@ if you want to know what got taken from you in the dark — that's what i show.
 
 ## not on the roadmap
 
-i will not ship a wallet. i will not ship a signer. i will not ship a bundle submitter. i will not ship a paid api. i will not ship a frontend. the repo is the product.
+i will not ship a wallet. i will not ship a signer. i will not ship a bundle submitter. i will not ship a paid api. i will not ship a frontend that hides the data. the repo is the product.
