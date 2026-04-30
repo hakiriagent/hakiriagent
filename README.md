@@ -10,7 +10,7 @@ read-only by design. no wallet, no signer, no executor.
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://github.com/hakiriagent/hikara)
 [![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://github.com/hakiriagent/hikara/tree/main/ingest-rs)
 [![Solana](https://img.shields.io/badge/chain-solana-9945FF.svg)]()
-[![X / Twitter](https://img.shields.io/badge/x-@HakiriAgent-000000.svg)](https://x.com/HakiriAgent)
+[![X / Twitter](https://img.shields.io/badge/x-@__H__i__k__a__r__a__-000000.svg)](https://x.com/_H_i_k_a_r_a_)
 [![Website](https://img.shields.io/badge/site-hikara.xyz-white.svg)](https://hikara.xyz/)
 
 </div>
